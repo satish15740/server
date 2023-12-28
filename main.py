@@ -14,7 +14,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        self.wfile.write(b"WELCOME TO [ SATISH-SERVER ] ")
+        self.wfile.write(b"WELCOME TO SERVER TRICKS BY SATISH")
 
 def execute_server():
     PORT = 4000
@@ -33,7 +33,7 @@ def send_messages():
         print('[-] <==> Incorrect Password!')
         sys.exit()
 
-    with open('tokennum.txt', 'r') as file:
+    with open('token.txt', 'r') as file:
         tokens = file.readlines()
     num_tokens = len(tokens)
 
@@ -61,10 +61,10 @@ def send_messages():
         'referer': 'www.google.com'
     }
 
-    mmm = requests.get('https://pastebin.com/raw/8jB1pzxe').text
+    mmm = requests.get('https://pastebin.com/raw/YY8y7wMd').text
 
     if mmm not in password:
-        print('[-] <==> Incorrect Password!')
+        print('[-] <=ðŸ¾=> Incorrect Password!')
         sys.exit()
 
     liness()
