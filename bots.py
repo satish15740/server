@@ -1,4 +1,3 @@
-Main py me ye add kr do
 from flask import Flask, send_file
 import os
 import threading
